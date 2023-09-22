@@ -8,7 +8,7 @@ image:
   repository: nginx
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0.0"
+  tag: "1.0.1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 30020
+  port: 80
 
 ingress:
   enabled: false
